@@ -67,10 +67,15 @@
 // }
 // console.log(Reverse([1,2,3,4]));
 // 9.
-// const Slice = (arr) => {
-//     const newArr = []
+// const Slice = (num) => {
+//     const newArr = ['oleg', 2, 'moon', 'sun', 5]
+//     const arr = []
+//     for(let i = num; i < newArr.length; i++){
+//         arr[arr.length] = newArr[i] 
+//     }
+//     return arr
 // }
-// console.log(Slice([1,2,3,4]));
+// console.log(Slice(1));
 // 10.
 // const LastIndexOf = (arr,el) => {
 //     for(let i = arr.length; i >= 0; i--){
