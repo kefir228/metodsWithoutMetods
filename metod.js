@@ -5,7 +5,7 @@
 //     }
 //     return arr
 //     }
-// console.log(Push([4,3,2], 1, 2));
+// console.log(Push([4,3,2], 1, 2, 3));
 // 2.
 // const Join = (arr, divider) => {
 //     let str = ''
@@ -64,26 +64,29 @@
 // }
 // console.log(Includes([1,2,3,4],1,2));
 // 8.
-// const Reverse = (arr) => { недороблене
-//     const length = arr.length
-//     for(let i = 0; i < length; i ++){
-//         arr[length - i - 1] = arr[i]
-//     }
-//     return [...arr]
-// }
-// console.log(Reverse([1,2,3,4]));
-// 9.
-// const Slice = (num) => { недороблене
-//     const newArr = ['oleg', 2, 'moon', 'sun', 5]
-//     const arr = []
-//     for(let i = num; i < newArr.length; i++){
-//         arr[arr.length] = newArr[i] 
-//     }
-//     if(num < 0){
-//         arr[arr.length] = newArr[newArr.length - num]
+// const Reverse = (arr) => {
+
+//     for (let i = 0; i < Math.floor(arr.length/2); i++) {
+//         let temp = arr[i]
+//         arr[i] = arr[arr.length - 1 - i]
+//         arr[arr.length - 1 - i] = temp
 //     }
 //     return arr
 // }
+// console.log(Reverse([1, 2, 3, 4]));
+// 9.
+// const Slice = (num) => { 
+//     const newArr = ['oleg', 2, 'moon', 'sun', 5]
+//     const arr = []
+//     if(num < 0){
+//         num = newArr.length + num 
+//     }
+//     for(let i = num; i < newArr.length; i++){
+//         arr[arr.length] = newArr[i] 
+//     }
+//     return arr
+// }
+// console.log(Slice(2));
 // console.log(Slice(-1));
 // 10.
 // const LastIndexOf = (arr,el,index ) => {
